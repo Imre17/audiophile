@@ -1,0 +1,171 @@
+@import '../../../scss/global.scss';
+
+.container {
+    max-width: 1440px;
+
+    @include respond(desktop) {
+        max-width: 1160px;
+    }
+    @include respond(tablet) {
+        max-width: 960px;
+    }
+}
+
+.row {
+    margin-bottom: 5.25rem;
+}
+
+.header {
+    height: 15rem;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        color: $white;
+        font-size: $manrope-h2;
+        font-weight: $manrope-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.0937rem;
+    }
+}
+
+.earphones {
+    margin-top: 9.687rem;
+
+    &__yx1 {
+        background-image: url('../../../assets/images/category-earphones/desktop/image-yx1-earphones.jpg');
+
+        @include respond(tablet-land) {
+            height: 25rem;
+            background-image: url('../../../assets/images/category-earphones/tablet/image-yx1-earphones.jpg');
+        }
+    }
+
+    &__desc-yx1 {
+        width: 28.437rem;
+        margin-left: 8.125rem;
+
+        @include respond(desktop) {
+            margin-left: 5.625rem;
+        }
+
+        @include respond(tablet-land) {
+            width: 34.375rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+h2 {
+    font-size: $manrope-h2;
+    font-weight: $manrope-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.0937rem;
+    line-height: 2.75rem;
+    margin-bottom: 2.5rem;
+
+    @include respond(tablet-land) {
+        text-align: center;
+    }
+}
+
+p {
+    color: $grey;
+    font-size: $manrope-body;
+    line-height: 1.562rem;
+    margin-bottom: 2.812rem;
+    
+    @include respond(tablet-land) {
+        text-align: center;
+    }
+}
+
+.features {
+
+    &__gallery-1 {
+        background-image: url('../../../assets/images/product-yx1-earphones/desktop/image-gallery-1.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-yx1-earphones/mobile/image-gallery-1.jpg');
+        }
+    }
+    
+    &__gallery-2 {
+
+        background-image: url('../../../assets/images/product-yx1-earphones/desktop/image-gallery-2.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-yx1-earphones/mobile/image-gallery-2.jpg');
+        }
+    }
+    
+    &__gallery-3 {
+
+        background-image: url('../../../assets/images/product-yx1-earphones/desktop/image-gallery-3.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-yx1-earphones/mobile/image-gallery-3.jpg');
+        }
+    }
+}
+
+.sugestion {
+    text-align: center;
+
+    h1 {
+        font-size: $manrope-h2;
+        font-weight: $manrope-bold;
+        letter-spacing: 0.0937rem;
+        text-transform: uppercase;
+        margin-bottom: 3.125rem;
+    }
+
+    .img-xx99 {
+        max-width: 100%;
+        height: 20rem;
+        background-image: url('../../../assets/images/category-headphones/tablet/image-xx99-mark-one.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.625rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .img-xx59 {
+        max-width: 100%;
+        height: 20rem;
+        background-image: url('../../../assets/images/category-headphones/tablet/image-xx59.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.625rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .img-zx9 {
+        max-width: 100%;
+        height: 20rem;
+        background-image: url('../../../assets/images/category-speakers/tablet/image-zx9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.625rem;
+        margin-bottom: 1.875rem;
+    }
+
+}
+
+h3 {
+    font-size: $manrope-h3;
+    font-weight: $manrope-bold;
+    letter-spacing: 0.0937rem;
+    text-transform: uppercase;
+    margin-bottom: 1.562rem;
+}

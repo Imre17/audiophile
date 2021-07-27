@@ -1,0 +1,199 @@
+.container {
+  max-width: 1440px;
+}
+
+@media (max-width: 90rem) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.row {
+  margin-bottom: 5.25rem;
+}
+
+.header {
+  height: 15rem;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0937rem;
+}
+
+.earphones {
+  margin-top: 9.687rem;
+}
+
+.earphones__yx1 {
+  background-image: url("../../../assets/images/category-earphones/desktop/image-yx1-earphones.jpg");
+}
+
+@media (max-width: 75rem) {
+  .earphones__yx1 {
+    height: 25rem;
+    background-image: url("../../../assets/images/category-earphones/tablet/image-yx1-earphones.jpg");
+  }
+}
+
+.earphones__desc-yx1 {
+  width: 28.437rem;
+  margin-left: 8.125rem;
+}
+
+@media (max-width: 90rem) {
+  .earphones__desc-yx1 {
+    margin-left: 5.625rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .earphones__desc-yx1 {
+    width: 34.375rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0937rem;
+  line-height: 2.75rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 75rem) {
+  h2 {
+    text-align: center;
+  }
+}
+
+p {
+  color: #555555;
+  font-size: 0.937rem;
+  line-height: 1.562rem;
+  margin-bottom: 2.812rem;
+}
+
+@media (max-width: 75rem) {
+  p {
+    text-align: center;
+  }
+}
+
+.features__gallery-1 {
+  background-image: url("../../../assets/images/product-yx1-earphones/desktop/image-gallery-1.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-1 {
+    background-image: url("../../../assets/images/product-yx1-earphones/mobile/image-gallery-1.jpg");
+  }
+}
+
+.features__gallery-2 {
+  background-image: url("../../../assets/images/product-yx1-earphones/desktop/image-gallery-2.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-2 {
+    background-image: url("../../../assets/images/product-yx1-earphones/mobile/image-gallery-2.jpg");
+  }
+}
+
+.features__gallery-3 {
+  background-image: url("../../../assets/images/product-yx1-earphones/desktop/image-gallery-3.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-3 {
+    background-image: url("../../../assets/images/product-yx1-earphones/mobile/image-gallery-3.jpg");
+  }
+}
+
+.sugestion {
+  text-align: center;
+}
+
+.sugestion h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.0937rem;
+  text-transform: uppercase;
+  margin-bottom: 3.125rem;
+}
+
+.sugestion .img-xx99 {
+  max-width: 100%;
+  height: 20rem;
+  background-image: url("../../../assets/images/category-headphones/tablet/image-xx99-mark-one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.sugestion .img-xx59 {
+  max-width: 100%;
+  height: 20rem;
+  background-image: url("../../../assets/images/category-headphones/tablet/image-xx59.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.sugestion .img-zx9 {
+  max-width: 100%;
+  height: 20rem;
+  background-image: url("../../../assets/images/category-speakers/tablet/image-zx9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.0937rem;
+  text-transform: uppercase;
+  margin-bottom: 1.562rem;
+}
+/*# sourceMappingURL=earphones.component.css.map */

@@ -1,0 +1,191 @@
+.navBar {
+  height: 5.9375rem;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 8.312rem;
+}
+
+@media (max-width: 30rem) {
+  .navBar {
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 30rem) {
+  .navBar__logo {
+    margin: 0 auto;
+    padding-left: 70px;
+  }
+}
+
+.navBar__lists {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 90rem) {
+  .navBar__lists {
+    width: 65%;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .navBar__lists {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    top: 9.7vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101010;
+    z-index: 3;
+    -webkit-transform: translateY(-1050px);
+            transform: translateY(-1050px);
+  }
+}
+
+.navBar__lists li {
+  list-style: none;
+}
+
+@media (max-width: 71.562rem) {
+  .navBar__lists li .nav-items {
+    font-size: 1.5rem;
+  }
+}
+
+.navBar__lists .google {
+  font-size: 1.2rem;
+}
+
+.navBar__shopping-cart {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navBar .burger {
+  width: 30px;
+  height: 25px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+@media (max-width: 71.562rem) {
+  .navBar .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 30rem) {
+  .navBar .burger {
+    left: 20px;
+  }
+}
+
+.navBar .burger .line0 {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.navBar .burger .line0.toggle {
+  -webkit-transform: rotate(-45deg) translate(-10px, 7px);
+          transform: rotate(-45deg) translate(-10px, 7px);
+}
+
+.navBar .burger .line1 {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.navBar .burger .line1.toggle {
+  opacity: 0;
+}
+
+.navBar .burger .line2 {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.navBar .burger .line2.toggle {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+          transform: rotate(45deg) translate(-8px, -6px);
+}
+
+.navBar mdb-badge {
+  background-color: #d87d4a !important;
+}
+
+.navBar::after {
+  content: '';
+  height: 1px;
+  background-color: #fafafa;
+  position: absolute;
+  right: 8.312rem;
+  left: 8.312rem;
+  top: 6rem;
+  opacity: 0.2;
+}
+
+@media (max-width: 30rem) {
+  .navBar::after {
+    right: 0;
+    left: 0;
+  }
+}
+
+.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+/*# sourceMappingURL=nav.component.css.map */

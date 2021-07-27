@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "shop.component.scss",
+        "../../../scss/global.scss",
+        "../../../scss/helpers/_mixins.scss",
+        "../../../scss/helpers/_variables.scss"
+    ],
+    "names": [],
+    "file": "shop.component.css"
+}

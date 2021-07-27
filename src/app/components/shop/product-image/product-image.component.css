@@ -1,0 +1,21 @@
+.img {
+  max-width: 18.75rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 90rem) {
+  .img {
+    max-width: 12.5rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .img {
+    margin: 5rem auto;
+  }
+}
+
+.img img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=product-image.component.css.map */

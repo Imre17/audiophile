@@ -1,0 +1,239 @@
+.container {
+  max-width: 1440px;
+}
+
+@media (max-width: 90rem) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.row {
+  margin-bottom: 5.25rem;
+}
+
+.header {
+  height: 15rem;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0937rem;
+}
+
+.headphones {
+  margin-top: 9.687rem;
+}
+
+.headphones__xx99 {
+  background-image: url("../../../assets/images/category-headphones/desktop/image-xx99-mark-two.jpg");
+}
+
+@media (max-width: 75rem) {
+  .headphones__xx99 {
+    height: 25rem;
+    background-image: url("../../../assets/images/category-headphones/tablet/image-xx99-mark-two.jpg");
+  }
+}
+
+.headphones__desc-xx99 {
+  width: 28.437rem;
+  margin-left: 8.125rem;
+}
+
+@media (max-width: 90rem) {
+  .headphones__desc-xx99 {
+    margin-left: 5.625rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .headphones__desc-xx99 {
+    width: 34.375rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.headphones__mark1 {
+  background-image: url("../../../assets/images/category-headphones/desktop/image-xx99-mark-one.jpg");
+}
+
+@media (max-width: 75rem) {
+  .headphones__mark1 {
+    height: 25rem;
+    background-image: url("../../../assets/images/category-headphones/tablet/image-xx99-mark-one.jpg");
+  }
+}
+
+.headphones__desc-mark1 {
+  width: 28.437rem;
+  margin-right: 8.125rem;
+}
+
+@media (max-width: 90rem) {
+  .headphones__desc-mark1 {
+    margin-right: 5.625rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .headphones__desc-mark1 {
+    width: 34.375rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.headphones__xx59 {
+  background-image: url("../../../assets/images/category-headphones/desktop/image-xx59.jpg");
+}
+
+@media (max-width: 75rem) {
+  .headphones__xx59 {
+    height: 25rem;
+    background-image: url("../../../assets/images/category-headphones/tablet/image-xx59.jpg");
+  }
+}
+
+.headphones__desc-xx59 {
+  width: 28.437rem;
+  margin-left: 8.125rem;
+}
+
+@media (max-width: 90rem) {
+  .headphones__desc-xx59 {
+    margin-left: 5.625rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .headphones__desc-xx59 {
+    width: 34.375rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 75rem) {
+  #mark1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0937rem;
+  line-height: 2.75rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 75rem) {
+  h2 {
+    text-align: center;
+  }
+}
+
+p {
+  color: #555555;
+  font-size: 0.937rem;
+  line-height: 1.562rem;
+  margin-bottom: 2.812rem;
+}
+
+@media (max-width: 75rem) {
+  p {
+    text-align: center;
+  }
+}
+
+.features__gallery-1 {
+  background-image: url("../../../assets/images/product-xx59-headphones/desktop/image-gallery-1.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-1 {
+    background-image: url("../../../assets/images/product-xx59-headphones/mobile/image-gallery-1.jpg");
+  }
+}
+
+.features__gallery-2 {
+  background-image: url("../../../assets/images/product-xx59-headphones/desktop/image-gallery-2.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-2 {
+    background-image: url("../../../assets/images/product-xx59-headphones/mobile/image-gallery-2.jpg");
+  }
+}
+
+.features__gallery-3 {
+  background-image: url("../../../assets/images/product-xx59-headphones/desktop/image-gallery-3.jpg");
+}
+
+@media (max-width: 71.562rem) {
+  .features__gallery-3 {
+    background-image: url("../../../assets/images/product-xx59-headphones/mobile/image-gallery-3.jpg");
+  }
+}
+/*# sourceMappingURL=headphones.component.css.map */

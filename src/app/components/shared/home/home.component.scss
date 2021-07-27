@@ -1,0 +1,344 @@
+@import '../../../../scss/global.scss';
+
+.container {
+    max-width: 1440px;
+
+    @include respond(desktop) {
+        max-width: 1160px;
+    }
+    @include respond(tablet) {
+        max-width: 960px;
+    }
+}
+
+.header {
+    height: 45.562rem;
+    position: relative;
+
+
+
+    &__hero {
+        background-image: url('../../../../assets/images/home/desktop/image-hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        @include respond(tablet) {
+            background-image: url('../../../../assets/images/home/tablet/image-header.jpg');
+        }
+    }
+
+    &__details {
+        width: 43.75rem;
+        padding: 8.4375rem 0 0 18.312rem ;
+
+        @include respond(desktop) {
+            width: 36.562rem;
+            padding: 8.4375rem 0 0 10.312rem; 
+        }
+
+        @include respond(tablet) {
+            width: 28.562rem;
+            padding-left: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+
+        span{
+            color: $light-grey;
+            font-size: $manrope-overline;
+            letter-spacing: 0.625rem;
+            text-transform: uppercase;
+
+            @include respond(phone) {
+                font-size: 0.775rem;
+            }
+            
+        }
+
+        h1 {
+            color: $white;
+            font-size: $manrope-h1;
+            font-weight: $manrope-bold;
+            letter-spacing: 0.125rem;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            margin-top: 2.187rem;
+            margin-bottom: 2.5rem;
+
+            @include respond(phone) {
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            color: $very-light-grey;
+            font-size: $manrope-subTitle;
+            font-weight: $manrope-regular;
+            letter-spacing: 0.0625rem;
+            line-height: 1.562rem;
+            padding-right: 3rem;
+            margin-bottom: 2.812rem;
+
+            @include respond(tablet) {
+                padding-left: 3rem;
+            }
+
+            @include respond(phone) {
+                padding: 0 3.2rem;
+                font-size: 0.712rem;
+            }
+        }
+
+    }
+}
+
+.main {
+    margin-top: 10rem;
+
+    &__img {
+        width: 10.625rem;
+        position: absolute; 
+        left: 24%;
+        bottom: 50%;
+    }
+
+    &__box {
+        position: relative;
+        width: 21.875rem;
+        height: 12.5rem;
+        background-color: $very-light-grey;
+        border-radius: 0.625rem;
+        padding-bottom: 1.562rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 5rem;
+        
+        
+        
+        h1 {
+            font-size: $manrope-body;
+            font-weight: $manrope-bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.0625rem;
+        }
+        
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.section {
+    margin: 5rem 0;
+
+    &__speaker-zx9 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        height: 35rem;
+        background-color: $light-orange;
+        border-radius: 0.625rem;
+        padding: 7.5rem 7.5rem 0 8.75rem;
+        overflow: hidden;
+        background-image: url('../../../../assets/images/home/desktop/pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-position: -9.375rem -1.25rem;
+
+        @include respond(tablet) {
+            height: 44.687rem;
+            padding: 0;
+            padding-top: 3.25rem;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-position: 50% -18.75rem;
+        }
+      
+        .overlay-img {
+            width: 23.437rem;
+            height: 28.062rem;
+            background-image: url('../../../../assets/images/home/desktop/image-speaker-zx9.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @include respond(tablet) {
+                width: 11.25rem;
+                height: 14.0625rem;
+                background-image: url('../../../../assets/images/home/mobile/image-speaker-zx9.png');
+
+            }
+        }
+
+        .description {
+            width: 20.312rem;
+
+            @include respond(tablet) {
+                text-align: center;
+                margin: 0 auto;
+                padding-bottom: 4.062rem;
+            }
+
+            h1 {
+                color: $white;
+                font-size: $manrope-h1;
+                font-weight: $manrope-bold;
+                text-transform: uppercase;
+                letter-spacing: 0.125rem;
+                line-height: 3.625rem;
+                margin-bottom: 2.187rem;
+
+     
+            }
+
+            p {
+                color: $white;
+                font-size: $manrope-body;
+                line-height: 1.562rem;
+                margin-bottom: 2.812rem;
+
+            }
+        }
+    }
+
+    &__speaker-zx7 {
+        max-width: 100%;
+        height: 20rem;
+        background-color: $light-grey;
+        padding-left: 6.25rem;
+        margin-top: 2.812rem;
+        border-radius: 0.625rem;
+        display: flex;
+        justify-content: space-between;
+        background-image: url('../../../../assets/images/home/desktop/image-speaker-zx7.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+
+        .description {
+            width: 27.812rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            h1 {
+                color: $black;
+                font-size: $manrope-h3;
+                font-weight: $manrope-bold;
+                text-transform: uppercase;
+                letter-spacing: 0.0718rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+
+    &__img-earphone {
+        max-width: 100%;
+        height: 21.875rem;
+        border-radius: 0.625rem;
+        background-image: url('../../../../assets/images/home/desktop/image-earphones-yx1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2.812rem;
+    }
+
+    &__earphone-yx1 {
+        max-width: 100%;
+        height: 21.875rem;
+        border-radius: 0.625rem;
+        padding: 6.875rem 0 0 5.937rem; 
+        background-color: $light-grey;
+
+        h1 {
+            color: $black;
+            font-size: $manrope-h4;
+            font-weight: $manrope-bold;
+            text-transform: uppercase;
+            letter-spacing: 0.125rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+.article {
+    margin-bottom: 12.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(desktop) {
+        flex-direction: column-reverse; 
+    }
+
+    &__description {
+        width: 28.125rem;
+
+        @include respond(desktop) {
+           width: 100%;
+           margin: 0 auto;
+           text-align: center;
+        }
+
+        h2 {
+            color: $black;
+            font-size: $manrope-h2;
+            font-weight: $manrope-bold;
+            text-transform: uppercase;
+            letter-spacing: 0.0937rem;
+            line-height: 2.75rem;
+            margin-bottom: 2.812rem;
+
+            span{ 
+                color: $light-orange;
+            }
+        }
+
+        p {
+            color: $grey;
+            line-height: 1.562rem;
+        }
+    }
+
+    &__image {
+        width: 43.125rem;
+        margin-bottom: 4.375rem;
+
+        @include respond(desktop) {
+            width: 100%;
+        }
+
+        .best-gear-img{
+            max-width: 100%;
+            height: 36.875rem;
+            border-radius: 0.625rem;
+            background-image: url('../../../../assets/images/shared/desktop/image-best-gear.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @include respond(desktop) {
+                background-image: url('../../../../assets/images/shared/tablet/image-best-gear.jpg');
+            }
+        }
+   
+    }
+}

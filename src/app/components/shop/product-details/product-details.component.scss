@@ -1,0 +1,97 @@
+@import '../../../../scss/global.scss';
+
+.description {
+    width: 26.875rem;
+    margin-left: 6.25rem;
+    margin-bottom: 5rem;
+
+    @include respond(desktop) {
+       margin-left: 3.125rem;
+    }
+
+    @include respond(tablet-land) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: $manrope-h2;
+        font-weight: $manrope-bold;
+        color: $orange;
+        letter-spacing: 0.0937rem;
+        text-transform: uppercase;
+        margin-bottom: 1.875rem;
+        word-wrap: break-word;
+
+        @include respond(desktop) {
+            font-size: $manrope-h3;
+         }
+    }
+
+    
+
+    p {
+        font-size: $manrope-body;
+        color: $grey;
+        line-height: 1.562rem;
+        margin-bottom: 1.25rem;
+    }
+
+    h4 {
+        font-size: $manrope-h4;
+        font-weight: $manrope-bold;
+        letter-spacing: 0.125rem;
+
+        @include respond(desktop) {
+            font-size: $manrope-h5;
+         }
+
+    }
+
+    .row {
+        @include respond(tablet) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .qty {
+        font-size: $manrope-h4;
+        color: $grey;
+    }
+
+    .button {
+        margin-top: 3rem;
+    }
+
+    .addQty {
+        margin-top: 3rem;
+        background-color: $light-grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(tablet) {
+            width: 12.5rem;
+        }
+    }
+
+    .btn {
+        height: 100% !important;
+        width: 3.125rem !important;
+        font-size: $manrope-h5;
+        border-radius: 0 !important;
+        background-color: transparent;
+        color: $black !important;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $orange !important;
+            color: $light-grey !important
+        }
+    }
+}

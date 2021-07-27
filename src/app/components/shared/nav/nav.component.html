@@ -1,0 +1,72 @@
+<nav class="navBar">
+   
+        <img src="../../../../assets/images/shared/desktop/logo.svg" alt="logo" class="navBar__logo">
+     
+        <ul class="navBar__lists" #lists>
+            <li><a #a class="nav-items" routerLink="/">Home</a></li>
+            <li><a #a class="nav-items" routerLink="/headphones">Headphones</a></li>
+            <li><a #a class="nav-items" routerLink="/speakers">Speakers</a></li>
+            <li><a #a class="nav-items" routerLink="/earphones">Earphones</a></li>
+            
+            <ng-template #anonymousUser>    
+                <li>
+                    <a #a
+                    class="nav-items google"  
+                    (click)="login()">
+                        <mdb-icon fab icon="google"></mdb-icon>
+                    </a>
+                </li>
+            </ng-template>
+
+            <li 
+            *ngIf="appUser; else anonymousUser"
+            class="nav-item dropdown" 
+            dropdown>
+                <a  
+                    dropdownToggle 
+                    mdbWavesEffect 
+                    type="button" 
+                    class="nav-items dropdown-toggle"
+                    mdbWavesEffect
+                >
+                    {{ appUser.name }}
+                <span class="caret"></span></a>
+
+                <div 
+                  *dropdownMenu 
+                  class="dropdown-menu dropdown dropdown-primary" 
+                  role="menu">
+                    <a class="dropdown-item" mdbWavesEffect routerLink="/shop">Shop</a>
+                    <ng-container *ngIf="appUser.isAdmin">
+                        <a class="dropdown-item" mdbWavesEffect routerLink="/admin/products">Manage Products</a>
+                    </ng-container>
+                    <a 
+                
+                    class="dropdown-item waves-light" 
+                    mdbWavesEffect
+                    (click)="logout()">Logout</a>
+                </div>
+            </li>
+            
+        </ul>
+        <a routerLink="/shopping-cart">
+            <mdb-icon 
+                fas icon="cart-arrow-down" 
+                class="navBar__shopping-cart">
+            </mdb-icon> 
+            <mdb-badge 
+                pill="true" 
+                default="true"
+                *ngIf="cart | async as cart">
+                    {{ cart.totalItemsCount }}
+            </mdb-badge>
+        </a>
+
+        <div class="burger" #burger>
+            <div 
+            *ngFor="let line of lines; let i = index"
+            class="line{{i}}" 
+            #line></div>
+        </div>
+
+</nav> 

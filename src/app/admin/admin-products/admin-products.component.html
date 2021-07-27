@@ -1,0 +1,52 @@
+<div class="container set-margin">
+  <div class="row mb-5">
+    <div class="col-md-6">
+
+      <a 
+        routerLink="/admin/products/new"
+        type="button" 
+        mdbBtn 
+        color="primary" 
+        mdbWavesEffect>
+        New Products
+      </a>
+
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+
+      <div class="md-form">
+        <input 
+        mdbInput
+        #query
+        (keyup)="filter(query.value)" 
+        type="text" 
+        placeholder="Search...">
+      </div>
+
+    </div>
+  </div>
+    
+    <table mdbTable>
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Category</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let product of filterProducts">
+            <td><img [src]="product.imgUrl" style="max-width: 55px;"></td>
+            <td>{{ product.category }}</td>
+            <td>{{ product.title }}</td>
+            <td>{{ product.price | currency: 'GBP'}}</td>
+            <td>
+                <a [routerLink]="['/admin/products/', product.key]">Edit</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

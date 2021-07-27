@@ -1,0 +1,18 @@
+@import '../../../../scss/global.scss';
+
+.img {
+    max-width: 18.75rem;
+    margin-bottom: 5rem;
+
+    @include respond(desktop) {
+        max-width: 12.5rem;
+    }
+
+    @include respond(tablet-land) {
+        margin: 5rem auto;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}

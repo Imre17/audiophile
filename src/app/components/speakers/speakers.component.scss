@@ -1,0 +1,140 @@
+@import '../../../scss/global.scss';
+
+.row {
+    margin-bottom: 5.25rem;
+}
+
+.header {
+    height: 15rem;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        color: $white;
+        font-size: $manrope-h2;
+        font-weight: $manrope-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.0937rem;
+    }
+}
+
+.speakers {
+    margin-top: 9.687rem;
+
+    &__zx9 {
+        background-image: url('../../../assets/images/category-speakers/desktop/image-zx9.jpg');
+
+        @include respond(tablet-land) {
+            height: 25rem;
+            background-image: url('../../../assets/images/category-speakers/tablet/image-zx9.jpg');
+        }
+    }
+
+    &__desc-zx9 {
+        width: 28.437rem;
+        margin-left: 8.125rem;
+
+        @include respond(desktop) {
+            margin-left: 5.625rem;
+        }
+
+        @include respond(tablet-land) {
+            width: 34.375rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__zx7 {
+        background-image: url('../../../assets/images/category-speakers/desktop/image-zx7.jpg');
+
+        @include respond(tablet-land) {
+            height: 25rem;
+            background-image: url('../../../assets/images/category-speakers/tablet/image-zx7.jpg');
+        }
+    }
+
+
+    &__desc-zx7 {
+        width: 28.437rem;
+        margin-right: 8.125rem;
+
+        @include respond(desktop) {
+            margin-right: 5.625rem;
+        }
+
+        @include respond(tablet-land) {
+            width: 34.375rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@include respond(tablet-land) {
+    #zx7 {
+        flex-direction: column-reverse;
+    }
+}
+
+h2 {
+    font-size: $manrope-h2;
+    font-weight: $manrope-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.0937rem;
+    line-height: 2.75rem;
+    margin-bottom: 2.5rem;
+
+    @include respond(tablet-land) {
+        text-align: center;
+    }
+}
+
+p {
+    color: $grey;
+    font-size: $manrope-body;
+    line-height: 1.562rem;
+    margin-bottom: 2.812rem;
+    
+    @include respond(tablet-land) {
+        text-align: center;
+    }
+}
+
+.features {
+
+    &__gallery-1 {
+
+        background-image: url('../../../assets/images/product-zx9-speaker/desktop/image-gallery-1.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-zx9-speaker/mobile/image-gallery-1.jpg');
+        }
+    }
+    
+    &__gallery-2 {
+
+        background-image: url('../../../assets/images/product-zx9-speaker/desktop/image-gallery-2.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-zx9-speaker/mobile/image-gallery-2.jpg');
+        }
+    }
+    
+    &__gallery-3 {
+
+        background-image: url('../../../assets/images/product-zx9-speaker/desktop/image-gallery-3.jpg');
+
+        @include respond(tablet) {
+            background-image: url('../../../assets/images/product-zx9-speaker/mobile/image-gallery-3.jpg');
+        }
+    }
+}

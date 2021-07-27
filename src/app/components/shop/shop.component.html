@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 mt-5">
+          <app-product-filter [category]="category"></app-product-filter>
+        </div>
+        <div class="col">
+            <div class="row" *ngFor="let product of filterProducts">
+                <div class="col-xl-6">
+                    <app-product-image [product]="product"></app-product-image> 
+                </div>
+            
+                <div class="col-xl-6 d-flex justify-content-center">
+                    <app-product-details 
+                    [product]="product" 
+                    [show-actions]="false"
+                    [shopping-cart]="cart"></app-product-details>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

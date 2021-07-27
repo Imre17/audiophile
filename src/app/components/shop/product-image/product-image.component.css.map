@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,QAAQ;EACnB,aAAa,EAAE,IAAI;CAatB;;AEFO,MAAM,EAAE,SAAS,EAAE,KAAK;EFbhC,AAAA,IAAI,CAAC;IAKG,SAAS,EAAE,OAAO;GAUzB;;;AENO,MAAM,EAAE,SAAS,EAAE,KAAK;EFThC,AAAA,IAAI,CAAC;IASG,MAAM,EAAE,SAAS;GAMxB;;;AAfD,AAYI,IAZA,CAYA,GAAG,CAAC;EACA,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "product-image.component.scss",
+        "../../../../scss/global.scss",
+        "../../../../scss/helpers/_mixins.scss",
+        "../../../../scss/helpers/_variables.scss"
+    ],
+    "names": [],
+    "file": "product-image.component.css"
+}

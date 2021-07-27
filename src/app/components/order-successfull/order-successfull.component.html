@@ -1,0 +1,52 @@
+<button 
+  type="button" 
+  mdbBtn 
+  class="relative btn__default button mt-5" 
+  (click)="basicModal.show()"
+  mdbWavesEffect>Continue & Pay
+</button>
+
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+
+      <div class="modal-header">
+        <h1 class="modal-title w-100" id="myModalLabel">Thank you for your Order</h1>
+        <h5>You will recive an email confirmation shortly</h5>
+      </div>
+
+      <div class="modal-body">
+          <div class="box">
+              <div class="box__left">
+                  <img [src]="return().imgUrl" [alt]="return().title">
+                <div class="description" > 
+                    <h3>{{ return().title }}</h3>
+                    <h4>{{ return().price |currency: 'GBP' }}</h4>
+                  </div>       
+                  <h5>X{{ return().quantity }}</h5>
+                <hr>
+                <h6>and {{ shoppingCart.totalItemsCount }} other item(s)</h6>
+              </div>
+              <div class="box__right">
+                  <h6>Garnd Total:</h6>
+                  <span>{{ shoppingCart.totalPrice | currency: 'GBP' }}</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+
+        <a 
+            routerLink="/"
+            type="button" 
+            mdbBtn
+            class="btn__default button" 
+            aria-label="Close"
+            (click)="basicModal.hide()" 
+            mdbWavesEffect>
+            Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+.description {
+  width: 26.875rem;
+  margin-left: 6.25rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 90rem) {
+  .description {
+    margin-left: 3.125rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .description {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.description h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d87d4a;
+  letter-spacing: 0.0937rem;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 90rem) {
+  .description h2 {
+    font-size: 2rem;
+  }
+}
+
+.description p {
+  font-size: 0.937rem;
+  color: #555555;
+  line-height: 1.562rem;
+  margin-bottom: 1.25rem;
+}
+
+.description h4 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+
+@media (max-width: 90rem) {
+  .description h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .description .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.description .qty {
+  font-size: 1.75rem;
+  color: #555555;
+}
+
+.description .button {
+  margin-top: 3rem;
+}
+
+.description .addQty {
+  margin-top: 3rem;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 71.562rem) {
+  .description .addQty {
+    width: 12.5rem;
+  }
+}
+
+.description .btn {
+  height: 100% !important;
+  width: 3.125rem !important;
+  font-size: 1.5rem;
+  border-radius: 0 !important;
+  background-color: transparent;
+  color: #101010 !important;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.description .btn:hover {
+  background-color: #d87d4a !important;
+  color: #f1f1f1 !important;
+}
+/*# sourceMappingURL=product-details.component.css.map */

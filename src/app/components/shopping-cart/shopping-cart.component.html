@@ -1,0 +1,179 @@
+<ng-container *ngIf="cart | async as cart">
+  <div class="container">
+    <a routerLink="/shop" class="go-back">Go back</a> 
+    <div class="row">
+      <div class="col-lg-6">
+          <div class="checkout">
+            <h2>Checkout</h2>
+  
+            <form>
+              <div class="form-group mb-5">
+               <h4>Billing Details</h4> 
+                <div class="form-row mb-4">
+
+                  <div class="col-md-6">
+                    <label for="name">Name</label>
+                    <input 
+                      mdbInput 
+                      mdbValidate
+                      type="text" 
+                      id="name"
+                      placeholder="Enter your full name.."
+                      class="form-control"
+                      required>
+
+                  </div>
+                  <div class="col-md-6">
+                    <label for="name">Email</label>
+                    <input 
+                      mdbInput 
+                      mdbValidate
+                      type="email" 
+                      id="email"
+                      placeholder="Enter your email.."
+                      class="form-control"
+                      required>
+                  </div>
+
+                </div>
+                    <label for="number">Phone Number</label>
+                    <input 
+                      mdbInput 
+                      mdbValidate
+                      type="number" 
+                      id="number"
+                      placeholder="+44.."
+                      class="form-control"
+                      required
+                      phone>
+              </div>
+              <div class="form-group mb-5">
+                <h4>Shipping Info</h4>
+                <label for="address">Address</label>
+                <input 
+                  mdbInput 
+                  mdbValidate
+                  type="text" 
+                  id="address"
+                  placeholder="Enter your address.."
+                  class="form-control mb-4"
+                  required>
+
+                  <div class="form-row mb-4">
+
+                    <div class="col-md-6">
+                      <label for="pcode">Postcode</label>
+                      <input 
+                        mdbInput 
+                        mdbValidate
+                        type="text" 
+                        id="pcode"
+                        placeholder="Enter a valid postcode.."
+                        class="form-control"
+                        required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="city">City</label>
+                      <input 
+                        mdbInput 
+                        mdbValidate
+                        type="text" 
+                        id="city"
+                        placeholder="Enter city name.."
+                        class="form-control"
+                        required>
+                    </div>
+
+                  </div>
+
+                  <label for="country">Country</label>
+                  <input 
+                    mdbInput 
+                    mdbValidate
+                    type="text" 
+                    id="country"
+                    placeholder="Enter country name.."
+                    class="form-control mb-4"
+                    required>
+               
+              </div>
+
+              <div class="form-group">
+                <h4>Payment Method</h4>
+                <label for="card-number">Card Number</label>
+                    <input 
+                      mdbInput 
+                      mdbValidate
+                      type="number" 
+                      id="card-number"
+                      placeholder="Enter a valid card-number.."
+                      class="form-control mb-4"
+                      required
+                      creditCard>
+
+                      <div class="form-row mb-4">
+
+                        <div class="col-md-6">
+                          <label for="n-on-card">Name on Card</label>
+                          <input 
+                            mdbInput 
+                            mdbValidate
+                            type="text" 
+                            id="n-on-card"
+                            placeholder="Name on card.."
+                            class="form-control"
+                            required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="sort-code">Sort Code</label>
+                          <input 
+                            mdbInput 
+                            mdbValidate
+                            type="number" 
+                            id="sort-code"
+                            placeholder="xx-xx-xx.."
+                            class="form-control"
+                            required>
+                        </div>
+    
+                      </div>
+              </div>
+
+              <app-order-successfull
+              [cart]='cart'>
+              </app-order-successfull>
+            </form>
+
+          </div>
+
+      </div>
+      <div class="col-lg-6">
+        <div class="summary">
+          <h3>Summary</h3>
+          <div class="product">
+
+            <div class="prod" *ngFor="let item of cart.items">
+              <img [src]="item.product.imgUrl" [alt]="item.product.title">
+              <div class="prod__title-price">
+                <h4>{{ item.product.title }}</h4>
+                <span>{{ item.product.price | currency: 'GBP' }}</span>
+              </div>
+              <div class="prod__qty">
+                <span>X{{ item.quantity }}</span>
+              </div>
+              <div class="prod__item-total">
+                <h6>Total item price: <p>{{ item.totalPriceItem | currency: 'GBP' }}</p></h6>
+              </div>
+            </div>
+
+            <div class="grand-total">
+              <h4>Grand total : </h4>
+              <span>{{ cart.totalPrice | currency: 'GBP' }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+

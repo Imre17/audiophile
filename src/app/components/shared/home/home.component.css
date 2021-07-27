@@ -1,0 +1,407 @@
+.container {
+  max-width: 1440px;
+}
+
+@media (max-width: 90rem) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.header {
+  height: 45.562rem;
+  position: relative;
+}
+
+.header__hero {
+  background-image: url("../../../../assets/images/home/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 71.562rem) {
+  .header__hero {
+    background-image: url("../../../../assets/images/home/tablet/image-header.jpg");
+  }
+}
+
+.header__details {
+  width: 43.75rem;
+  padding: 8.4375rem 0 0 18.312rem;
+}
+
+@media (max-width: 90rem) {
+  .header__details {
+    width: 36.562rem;
+    padding: 8.4375rem 0 0 10.312rem;
+  }
+}
+
+@media (max-width: 71.562rem) {
+  .header__details {
+    width: 28.562rem;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 30rem) {
+  .header__details {
+    width: 100%;
+  }
+}
+
+.header__details span {
+  color: #f1f1f1;
+  font-size: 0.875rem;
+  letter-spacing: 0.625rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 30rem) {
+  .header__details span {
+    font-size: 0.775rem;
+  }
+}
+
+.header__details h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin-top: 2.187rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 30rem) {
+  .header__details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.header__details p {
+  color: #fafafa;
+  font-size: 0.812rem;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 1.562rem;
+  padding-right: 3rem;
+  margin-bottom: 2.812rem;
+}
+
+@media (max-width: 71.562rem) {
+  .header__details p {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .header__details p {
+    padding: 0 3.2rem;
+    font-size: 0.712rem;
+  }
+}
+
+.main {
+  margin-top: 10rem;
+}
+
+.main__img {
+  width: 10.625rem;
+  position: absolute;
+  left: 24%;
+  bottom: 50%;
+}
+
+.main__box {
+  position: relative;
+  width: 21.875rem;
+  height: 12.5rem;
+  background-color: #fafafa;
+  border-radius: 0.625rem;
+  padding-bottom: 1.562rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5rem;
+}
+
+.main__box h1 {
+  font-size: 0.937rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.main__box:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.section {
+  margin: 5rem 0;
+}
+
+.section__speaker-zx9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  height: 35rem;
+  background-color: #fbaf85;
+  border-radius: 0.625rem;
+  padding: 7.5rem 7.5rem 0 8.75rem;
+  overflow: hidden;
+  background-image: url("../../../../assets/images/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -9.375rem -1.25rem;
+}
+
+@media (max-width: 71.562rem) {
+  .section__speaker-zx9 {
+    height: 44.687rem;
+    padding: 0;
+    padding-top: 3.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: 50% -18.75rem;
+  }
+}
+
+.section__speaker-zx9 .overlay-img {
+  width: 23.437rem;
+  height: 28.062rem;
+  background-image: url("../../../../assets/images/home/desktop/image-speaker-zx9.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 71.562rem) {
+  .section__speaker-zx9 .overlay-img {
+    width: 11.25rem;
+    height: 14.0625rem;
+    background-image: url("../../../../assets/images/home/mobile/image-speaker-zx9.png");
+  }
+}
+
+.section__speaker-zx9 .description {
+  width: 20.312rem;
+}
+
+@media (max-width: 71.562rem) {
+  .section__speaker-zx9 .description {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4.062rem;
+  }
+}
+
+.section__speaker-zx9 .description h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  line-height: 3.625rem;
+  margin-bottom: 2.187rem;
+}
+
+.section__speaker-zx9 .description p {
+  color: white;
+  font-size: 0.937rem;
+  line-height: 1.562rem;
+  margin-bottom: 2.812rem;
+}
+
+.section__speaker-zx7 {
+  max-width: 100%;
+  height: 20rem;
+  background-color: #f1f1f1;
+  padding-left: 6.25rem;
+  margin-top: 2.812rem;
+  border-radius: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../../../../assets/images/home/desktop/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.section__speaker-zx7 .description {
+  width: 27.812rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__speaker-zx7 .description h1 {
+  color: #101010;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0718rem;
+  margin-bottom: 2.5rem;
+}
+
+.section__img-earphone {
+  max-width: 100%;
+  height: 21.875rem;
+  border-radius: 0.625rem;
+  background-image: url("../../../../assets/images/home/desktop/image-earphones-yx1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2.812rem;
+}
+
+.section__earphone-yx1 {
+  max-width: 100%;
+  height: 21.875rem;
+  border-radius: 0.625rem;
+  padding: 6.875rem 0 0 5.937rem;
+  background-color: #f1f1f1;
+}
+
+.section__earphone-yx1 h1 {
+  color: #101010;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.article {
+  margin-bottom: 12.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 90rem) {
+  .article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.article__description {
+  width: 28.125rem;
+}
+
+@media (max-width: 90rem) {
+  .article__description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.article__description h2 {
+  color: #101010;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0937rem;
+  line-height: 2.75rem;
+  margin-bottom: 2.812rem;
+}
+
+.article__description h2 span {
+  color: #fbaf85;
+}
+
+.article__description p {
+  color: #555555;
+  line-height: 1.562rem;
+}
+
+.article__image {
+  width: 43.125rem;
+  margin-bottom: 4.375rem;
+}
+
+@media (max-width: 90rem) {
+  .article__image {
+    width: 100%;
+  }
+}
+
+.article__image .best-gear-img {
+  max-width: 100%;
+  height: 36.875rem;
+  border-radius: 0.625rem;
+  background-image: url("../../../../assets/images/shared/desktop/image-best-gear.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 90rem) {
+  .article__image .best-gear-img {
+    background-image: url("../../../../assets/images/shared/tablet/image-best-gear.jpg");
+  }
+}
+/*# sourceMappingURL=home.component.css.map */

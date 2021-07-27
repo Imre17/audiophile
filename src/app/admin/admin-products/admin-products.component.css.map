@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,SAAS;CACpB",
+    "sources": [
+        "admin-products.component.scss"
+    ],
+    "names": [],
+    "file": "admin-products.component.css"
+}

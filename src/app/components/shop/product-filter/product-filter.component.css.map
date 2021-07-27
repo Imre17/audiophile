@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EGDV,OAAe;EHErB,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "product-filter.component.scss",
+        "../../../../scss/global.scss",
+        "../../../../scss/helpers/_mixins.scss",
+        "../../../../scss/helpers/_variables.scss"
+    ],
+    "names": [],
+    "file": "product-filter.component.css"
+}
